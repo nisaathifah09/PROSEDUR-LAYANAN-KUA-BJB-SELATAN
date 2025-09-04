@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosedur Pelayanan KUA Kec. Banjarbaru Selatan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-4 flex flex-col items-center">
+
+    <!-- Main Content Container -->
+    <main class="w-full max-w-5xl">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight">Prosedur Pelayanan KUA</h1>
+            <h2 class="text-xl md:text-2xl text-gray-600 mt-2">Kecamatan Banjarbaru Selatan</h2>
+        </header>
+
+        <!-- Navigation Buttons -->
+        <nav class="flex flex-wrap justify-center sm:justify-start gap-3 md:gap-4 mb-8 p-4 bg-white rounded-xl shadow-md overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <button data-target="duplikat" class="nav-btn bg-blue-600 text-white font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Duplikat Buku Nikah</button>
+            <button data-target="surat-belum-nikah" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Surat Belum Nikah</button>
+            <button data-target="wakaf" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Pendaftaran Ikrar Wakaf</button>
+            <button data-target="legalisir" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Legalisir Buku Nikah</button>
+            <button data-target="taukil" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Taukil Bil Kitabah</button>
+            <button data-target="isbat" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Isbat Nikah</button>
+            <button data-target="pelimpahan" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Surat Rekomendasi Nikah</button>
+            <button data-target="perubahan-data" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Perubahan Data</button>
+        </nav>
+
+        <!-- Service Sections Container -->
+        <section id="services-container" class="space-y-8">
+            <!-- ALUR DUPLIKAT BUKU NIKAH -->
+            <div id="duplikat" class="service-section bg-white p-6 md:p-8 rounded-xl shadow-lg transition-opacity duration-500 ease-in-out">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">ALUR DUPLIKAT BUKU NIKAH</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Alur</h4>
+                        <ul class="list-decimal list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Melengkapi Persyaratan</li>
+                            <li>Mengisi Blanko Permohonan</li>
+                            <li>Verifikasi Akta Nikah</li>
+                            <li>Proses Penerbitan Buku Nikah</li>
+                            <li>Penyerahan Duplikat Buku Nikah dan Pengarsipan Berkas</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Persyaratan</h4>
+                        <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Surat Permohonan Secara Tertulis</li>
+                            <li>Surat Keterangan Masih Suami Istri dari Kelurahan</li>
+                            <li>Surat Keterangan Hilang dari Kepolisian</li>
+                            <li>Lampiran Identitas (Fotokopi KTP dan KK)</li>
+                            <li>Pas Photo Suami Istri 2x3 Masing-Masing 4 Lembar</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Catatan</h4>
+                        <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Latar Belakang Biru</li>
+                            <li>Buku Nikah Ditarik Bila Kondisi Rusak</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SURAT KETERANGAN BELUM NIKAH -->
+            <div id="surat-belum-nikah" class="service-section hidden bg-white p-6 md:p-8 rounded-xl shadow-lg transition-opacity duration-500 ease-in-out">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">SURAT KETERANGAN BELUM NIKAH</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Alur</h4>
+                        <ul class="list-decimal list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Melengkapi Persyaratan</li>
+                            <li>Mengisi Blanko Permohonan</li>
+                            <li>Proses Pembuatan Surat Keterangan Belum Nikah</li>
+                            <li>Tandatangan Penghulu/Kepala KUA</li>
+                            <li>Pengesahan dan Penomoran Surat Keterangan Belum Nikah</li>
+                            <li>Pengembalian Berkas Persyaratan dan Pengarsipan Beberapa Berkas</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Persyaratan</h4>
+                        <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Surat Belum Nikah Asli dari Kelurahan</li>
+                            <li>Fotokopi KTP dan KK Masing-masing 1 Lembar</li>
+                            <li>Pas Photo ukuran 4x6 2 Lembar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALUR PENDAFTARAN IKRAR WAKAF -->
+            <div id="wakaf" class="service-section hidden bg-white p-6 md:p-8 rounded-xl shadow-lg transition-opacity duration-500 ease-in-out">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">ALUR PENDAFTARAN IKRAR WAKAF</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Alur</h4>
+                        <ul class="list-decimal list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Melengkapi Persyaratan</li>
+                            <li>Mengisi Blanko Permohonan</li>
+                            <li>Survei Lokasi</li>
+                            <li>Persiapan dan Verifikasi Surat Menyurat Wakaf dan Nazhir</li>
+                            <li>Ikrar Wakaf dan Pengesahan Nazhir</li>
+                            <li>Penyerahan Ikrar Wakaf dan Surat Pengantar Ke BPN</li>
+                            <li>Pengarsipan Berkas Wakaf</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Persyaratan</h4>
+                        <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Surat Tanah atau Sertifikat Asli dan Fotokopi 7 Lembar</li>
+                            <li>Surat Keterangan dari Kelurahan tentang Status Tanah Asli dan Fotokopi 7 Lembar</li>
+                            <li>Fotokopi KTP dan KK Wakif 7 Lembar</li>
+                            <li>Fotokopi KTP dan KK Nazhir 7 Lembar</li>
+                            <li>Fotokopi Daftar Riwayat Hidup Calon Nazhir 7 Lembar</li>
+                            <li>Materai 10.000 7 Lembar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALUR LEGALISIR BUKU NIKAH -->
+            <div id="legalisir" class="service-section hidden bg-white p-6 md:p-8 rounded-xl shadow-lg transition-opacity duration-500 ease-in-out">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">ALUR LEGALISIR BUKU NIKAH</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Alur</h4>
+                        <ul class="list-decimal list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Melengkapi Persyaratan</li>
+                            <li>Mengisi Blanko Permohonan</li>
+                            <li>Proses Legalisir</li>
+                            <li>Tandatangan KUA</li>
+                            <li>Pengesahan dan Penomoran</li>
+                            <li>Pengembalian Berkas Persyaratan dan Pengarsipan</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Persyaratan</h4>
+                        <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Membawa dan Memperlihatkan Sepasang Buku Nikah Asli Suami Istri</li>
+                            <li>Fotokopi Buku Nikah dari Halaman Foto s/d Halaman Pengesahan Kepala KUA Kecamatan (Sedikitnya 2 Rangkap)</li>
+                            <li>Menyerahkan Fotokopi KTP Suami Istri dan KK yang bersangkutan</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Catatan</h4>
+                        <p class="text-gray-600">Tidak Boleh Ada Coretan, Rusak, Tipe-X dan hal-hal yang dapat merubah keabsahan Buku Nikah berdasarkan PMA No. 20 Tahun 2019 Pasal 41: Legalisasi Buku Nikah dilakukan pada KUA Kecamatan yang mencatat peristiwa nikah. Legalisir Buku Nikah dapat dilakukan di Kecamatan lain setelah melakukan verifikasi</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAUKIL BIL KITABAH -->
+            <div id="taukil" class="service-section hidden bg-white p-6 md:p-8 rounded-xl shadow-lg transition-opacity duration-500 ease-in-out">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">TAUKIL BIL KITABAH</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Alur</h4>
+                        <ul class="list-decimal list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Melengkapi Persyaratan</li>
+                            <li>Mengisi Blanko Permohonan</li>
+                            <li>Verifikasi Dokumen</li>
+                            <li>Tandatangan Kepala KUA</li>
+                            <li>Pengembalian Berkas dan Pengarsipan</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Persyaratan</h4>
+                        <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Fotokopi Surat Keterangan Nikah Model N dari Kelurahan 1 Rangkap</li>
+                            <li>Fotokopi Keterangan Wali dari Kelurahan</li>
+                            <li>Fotokopi KTP, KK dan Akta Kelahiran Masing-Masing Catin</li>
+                            <li>Nama KUA Kecamatan tempat Nikah</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ISBAT NIKAH -->
+            <div id="isbat" class="service-section hidden bg-white p-6 md:p-8 rounded-xl shadow-lg transition-opacity duration-500 ease-in-out">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">ISBAT NIKAH</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Alur</h4>
+                        <ul class="list-decimal list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Melengkapi Persyaratan</li>
+                            <li>Mengisi Blanko Permohonan</li>
+                            <li>Verifikasi Dokumen</li>
+                            <li>Pendaftaran Nikah Ulang</li>
+                            <li>Proses Pembuatan Buku Nikah</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Persyaratan</h4>
+                        <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Penetapan Isbat Nikah dari Pengadilan Agama</li>
+                            <li>Fotokopi KTP, KK dan Akta Kelahiran Suami Istri</li>
+                            <li>Pas Photo Latar Belakang Biru ukuran
+                                <ul class="list-[circle] list-inside pl-4 mt-1">
+                                    <li>2x3 3 Lembar</li>
+                                    <li>4x6 1 Lembar</li>
+                                </ul>
+                            </li>
+                            <li>Pas Photo Gandeng 4x6 1 Lembar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALUR SURAT PELIMPAHAN/REKOMENDASI NIKAH -->
+            <div id="pelimpahan" class="service-section hidden bg-white p-6 md:p-8 rounded-xl shadow-lg transition-opacity duration-500 ease-in-out">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">ALUR SURAT PELIMPAHAN/REKOMENDASI NIKAH</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Alur</h4>
+                        <ul class="list-decimal list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Melengkapi Persyaratan</li>
+                            <li>Mengisi Blanko Permohonan</li>
+                            <li>Verifikasi Dokumen Persyaratan</li>
+                            <li>Proses Pembuatan Surat Rekomendasi Nikah</li>
+                            <li>Tandatangan Penghulu/Kepala KUA</li>
+                            <li>Pengesahan dan Penomoran Surat Rekomendasi Nikah</li>
+                            <li>Pengembalian Berkas Persyaratan dan Pengarsipan Berkas</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Persyaratan</h4>
+                        <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Fotokopi Surat Keterangan Nikah Model N Satu Rangkap dari Kelurahan</li>
+                            <li>Fotokopi KTP dan KK (Masing-Masing 1 Lembar)</li>
+                            <li>Pas Photo ukuran 4x3 (2) Lembar)</li>
+                            <li>Nama KUA Kecamatan Tempat Nikah</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Catatan</h4>
+                        <p class="text-gray-600">Pastikan NIK anda tervalidasi dan update sudah BENAR!!!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALUR PERUBAHAN PADA BUKU NIKAH/SALINAN KUTIPAN AKTA NIKAH -->
+            <div id="perubahan-data" class="service-section hidden bg-white p-6 md:p-8 rounded-xl shadow-lg transition-opacity duration-500 ease-in-out">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">ALUR PERUBAHAN DATA PADA BUKU NIKAH</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Alur</h4>
+                        <ul class="list-decimal list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Melengkapi Persyaratan</li>
+                            <li>Mengisi Blanko Permohonan</li>
+                            <li>Proses Verifikasi Akta Nikah</li>
+                            <li>Perubahan Data Buku Nikah</li>
+                            <li>Penyerahan Buku Nikah dan Pengarsipan Beberapa Berkas</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Persyaratan</h4>
+                        <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Membawa Buku Nikah Terbitan KUA Banjarbaru Selatan</li>
+                            <li>Fotokopi KTP dan KK</li>
+                            <li>Putusan Pengadilan</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Catatan</h4>
+                        <p class="text-gray-600">Berdasarkan PMA No 30 Tahun 2024 Pasal 46: Perubahan nama suami, istri, atau orang tua pada Akta Nikah atau Buku Nikah dilakukan Oleh KUA berdasarkan putusan pengadilan dan dibuktikan dengan melampirkan akta kelahiran, Perubahan nama suami, istri atau orang tua yang sudah meninggal dunia didasarkana pada penetapan pengadilan. Pencatatan perubahan data perseorangan berupa tempat, tanggal, bulan, tahun lahir, kewarganegaraan, pekerjaan, dan alamat dilakukan oleh KUA berdasarkan kutipan akta pencatatan sipil dari dinas kependudukan dan pencatatan sipil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Get all navigation buttons and service sections
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const serviceSections = document.querySelectorAll('.service-section');
+
+        // Function to show a specific section
+        function showSection(targetId) {
+            // Hide all sections
+            serviceSections.forEach(section => {
+                section.classList.add('hidden');
+                section.classList.remove('opacity-100');
+            });
+
+            // Show the target section and fade it in
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.classList.remove('hidden');
+                setTimeout(() => {
+                    targetSection.classList.add('opacity-100');
+                }, 10);
+            }
+
+            // Update button active state
+            navButtons.forEach(button => {
+                if (button.dataset.target === targetId) {
+                    button.classList.add('bg-blue-600', 'text-white');
+                    button.classList.remove('bg-white', 'text-gray-700');
+                } else {
+                    button.classList.remove('bg-blue-600', 'text-white');
+                    button.classList.add('bg-white', 'text-gray-700');
+                }
+            });
+        }
+
+        // Add click event listeners to all navigation buttons
+        navButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.dataset.target;
+                showSection(targetId);
+            });
+        });
+
+        // Show the first section on initial load
+        showSection('duplikat');
+
+    </script>
+</body>
+</html>
