@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prosedur Pelayanan KUA Kec. Banjarbaru Selatan</title>
+    <title>Prosedur Pelayanan KUA - Kecamatan BJB Selatan</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -14,6 +14,10 @@
             -moz-osx-font-smoothing: grayscale;
             background-color: #f3f4f6;
         }
+        /* simple scrollbar-hide fallback */
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .opacity-100 { opacity: 1; }
+        .service-section { opacity: 0; }
     </style>
 </head>
 <body class="bg-gray-100 min-h-screen p-4 flex flex-col items-center">
@@ -23,7 +27,7 @@
         <!-- Header -->
         <header class="text-center mb-8">
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight">Prosedur Pelayanan KUA</h1>
-            <h2 class="text-xl md:text-2xl text-gray-600 mt-2">Kecamatan Banjarbaru Selatan</h2>
+            <h2 class="text-xl md:text-2xl text-gray-600 mt-2">Kecamatan BJB Selatan</h2>
         </header>
 
         <!-- Navigation Buttons -->
@@ -32,10 +36,11 @@
             <button data-target="surat-belum-nikah" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Surat Belum Nikah</button>
             <button data-target="wakaf" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Pendaftaran Ikrar Wakaf</button>
             <button data-target="legalisir" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Legalisir Buku Nikah</button>
-            <button data-target="taukil" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Taukil Bil Kitabah</button>
+            <button data-target="taukil" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Taukil bil Kitabah</button>
             <button data-target="isbat" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Isbat Nikah</button>
             <button data-target="pelimpahan" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Surat Rekomendasi Nikah</button>
             <button data-target="perubahan-data" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Perubahan Data</button>
+            <button data-target="nikah-campuran" class="nav-btn bg-white text-gray-700 font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 active:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Nikah Campuran (WNA)</button>
         </nav>
 
         <!-- Service Sections Container -->
@@ -155,7 +160,7 @@
                     </div>
                     <div>
                         <h4 class="text-xl font-semibold text-gray-700 mb-2">Catatan</h4>
-                        <p class="text-gray-600">Tidak Boleh Ada Coretan, Rusak, Tipe-X dan hal-hal yang dapat merubah keabsahan Buku Nikah berdasarkan PMA No. 20 Tahun 2019 Pasal 41: Legalisasi Buku Nikah dilakukan pada KUA Kecamatan yang mencatat peristiwa nikah. Legalisir Buku Nikah dapat dilakukan di Kecamatan lain setelah melakukan verifikasi</p>
+                        <p class="text-gray-600">Tidak Boleh Ada Coretan, Rusak, Tipe-X dan hal-hal yang dapat merubah keabsahan Buku Nikah berdasarkan PMA No. 20 Tahun 2019 Pasal 41: Legalisasi Buku Nikah dilakukan pada KUA Kecamatan yang mencatat peristiwa nikah. Legalisir Buku Nikah dapat dilakukan di Kecamatan lain setelah melakukan verifikasi.</p>
                     </div>
                 </div>
             </div>
@@ -177,9 +182,9 @@
                     <div>
                         <h4 class="text-xl font-semibold text-gray-700 mb-2">Persyaratan</h4>
                         <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
-                            <li>Fotokopi Surat Keterangan Nikah Model N dari Kelurahan 1 Rangkap</li>
+                            <li>Fotokopi Surat Keterangan Nikah Model N dari Kelurahan (1 Rangkap)</li>
                             <li>Fotokopi Keterangan Wali dari Kelurahan</li>
-                            <li>Fotokopi KTP, KK dan Akta Kelahiran Masing-Masing Catin</li>
+                            <li>Fotokopi KTP, KK, dan Akta Kelahiran masing-masing Catin</li>
                             <li>Nama KUA Kecamatan tempat Nikah</li>
                         </ul>
                     </div>
@@ -205,13 +210,13 @@
                         <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
                             <li>Penetapan Isbat Nikah dari Pengadilan Agama</li>
                             <li>Fotokopi KTP, KK dan Akta Kelahiran Suami Istri</li>
-                            <li>Pas Photo Latar Belakang Biru ukuran
+                            <li>Pas Photo Latar Belakang Biru ukuran:
                                 <ul class="list-[circle] list-inside pl-4 mt-1">
-                                    <li>2x3 3 Lembar</li>
-                                    <li>4x6 1 Lembar</li>
+                                    <li>2x3 — 3 Lembar</li>
+                                    <li>4x6 — 1 Lembar</li>
                                 </ul>
                             </li>
-                            <li>Pas Photo Gandeng 4x6 1 Lembar</li>
+                            <li>Pas Photo Gandeng 4x6 — 1 Lembar</li>
                         </ul>
                     </div>
                 </div>
@@ -238,7 +243,7 @@
                         <ul class="list-disc list-inside pl-4 space-y-2 text-gray-600">
                             <li>Fotokopi Surat Keterangan Nikah Model N Satu Rangkap dari Kelurahan</li>
                             <li>Fotokopi KTP dan KK (Masing-Masing 1 Lembar)</li>
-                            <li>Pas Photo ukuran 4x3 (2) Lembar)</li>
+                            <li>Pas Photo ukuran 4x3 (2 Lembar)</li>
                             <li>Nama KUA Kecamatan Tempat Nikah</li>
                         </ul>
                     </div>
@@ -249,8 +254,8 @@
                 </div>
             </div>
 
-            <!-- ALUR PERUBAHAN PADA BUKU NIKAH/SALINAN KUTIPAN AKTA NIKAH -->
-            <div id="perubahan-data" class="service-section hidden bg-white p-6 md:p-8 rounded-xl shadow-lg transition-opacity duration-500 ease-in-out">
+            <!-- ALUR PERUBAHAN DATA PADA BUKU NIKAH (DENGAN MATERI TAMBAHAN) -->
+            <div id="perubahan-data" class="service-section hidden bg-white p-6 md:p-8 rounded-xl shadow-lg transition-opacity duration-500 ease-in-out" tabindex="-1">
                 <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">ALUR PERUBAHAN DATA PADA BUKU NIKAH</h3>
                 <div class="space-y-6">
                     <div>
@@ -272,11 +277,45 @@
                         </ul>
                     </div>
                     <div>
-                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Catatan</h4>
-                        <p class="text-gray-600">Berdasarkan PMA No 30 Tahun 2024 Pasal 46: Perubahan nama suami, istri, atau orang tua pada Akta Nikah atau Buku Nikah dilakukan Oleh KUA berdasarkan putusan pengadilan dan dibuktikan dengan melampirkan akta kelahiran, Perubahan nama suami, istri atau orang tua yang sudah meninggal dunia didasarkana pada penetapan pengadilan. Pencatatan perubahan data perseorangan berupa tempat, tanggal, bulan, tahun lahir, kewarganegaraan, pekerjaan, dan alamat dilakukan oleh KUA berdasarkan kutipan akta pencatatan sipil dari dinas kependudukan dan pencatatan sipil.</p>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Catatan dan Tata Cara</h4>
+                        <p class="text-gray-600"><strong>Ingin Mengubah Data Pribadi di Buku Nikah atau Akta Nikah? Ini caranya!</strong></p>
+                        <ol class="list-decimal list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Perubahan nama suami, istri, atau orang tua pada Akta Nikah atau Buku Nikah dilakukan oleh KUA berdasarkan putusan pengadilan dan dibuktikan dengan melampirkan akta kelahiran.</li>
+                            <li>Perubahan nama suami, istri, atau orang tua yang sudah meninggal dunia didasarkan pada penetapan pengadilan.</li>
+                            <li>Perubahan data perseorangan berupa tempat, tanggal, bulan, tahun lahir, kewarganegaraan, pekerjaan, dan alamat dilakukan oleh KUA berdasarkan kutipan akta pencatatan sipil dari dinas kependudukan dan pencatatan sipil.</li>
+                        </ol>
                     </div>
                 </div>
             </div>
+
+            <!-- NIKAH CAMPURAN (WNA) -->
+            <div id="nikah-campuran" class="service-section hidden bg-white p-6 md:p-8 rounded-xl shadow-lg transition-opacity duration-500 ease-in-out">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">PERSYARATAN NIKAH CAMPURAN BAGI WARGA NEGARA ASING</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Persyaratan</h4>
+                        <ul class="list-decimal list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Surat keterangan tidak ada halangan menikah (certificate of no impediment) dari kedutaan atau kantor perwakilan negara yang bersangkutan</li>
+                            <li>Bagi negara asing yang telah memberlakukan sertifikat apostille, dokumen yang berisi surat keterangan status/tidak ada halangan menikah yang dikeluarkan lembaga berwenang dari negara asing dilengkapi dengan fotokopi sertifikat apostille</li>
+                            <li>Izin poligami dari pengadilan atau instansi berwenang di negara asal (bagi calon suami yang ingin beristri lebih dari satu)</li>
+                            <li>Melampirkan akta cerai atau surat keterangan kematian bagi duda/janda</li>
+                            <li>Melampirkan fotokopi akta kelahiran</li>
+                            <li>Melampirkan fotokopi paspor</li>
+                            <li>Melampirkan data kedua orang tua</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">Catatan</h4>
+                        <ul class="list-decimal list-inside pl-4 space-y-2 text-gray-600">
+                            <li>Semua dokumen berbahasa asing (kecuali bahasa Melayu) harus diterjemahkan ke dalam bahasa Indonesia oleh penerjemah resmi</li>
+                            <li>Jika tidak ada kedutaan/kantor perwakilan negara asing di Indonesia, surat keterangan dapat diperoleh dari instansi berwenang di negara asal</li>
+                            <li>Jika negara asal tidak memiliki aturan izin poligami, permohonan dapat diajukan ke pengadilan di Indonesia</li>
+                        </ul>
+                    </div>
+                    <p class="text-gray-600 text-sm">Sumber: PMA Nomor 30 Tahun 2024 Tentang Pencatatan Nikah</p>
+                </div>
+            </div>
+
         </section>
     </main>
 
@@ -299,7 +338,7 @@
                 targetSection.classList.remove('hidden');
                 setTimeout(() => {
                     targetSection.classList.add('opacity-100');
-                }, 10);
+                }, 20);
             }
 
             // Update button active state
@@ -312,6 +351,13 @@
                     button.classList.add('bg-white', 'text-gray-700');
                 }
             });
+
+            // set hash for direct linking
+            if (history.pushState) {
+                history.replaceState(null, null, '#' + targetId);
+            } else {
+                location.hash = targetId;
+            }
         }
 
         // Add click event listeners to all navigation buttons
@@ -319,12 +365,16 @@
             button.addEventListener('click', () => {
                 const targetId = button.dataset.target;
                 showSection(targetId);
+                // focus to the section for accessibility
+                const sec = document.getElementById(targetId);
+                if (sec) sec.focus();
             });
         });
 
-        // Show the first section on initial load
-        showSection('duplikat');
-
+        // If URL has hash, open that section; otherwise open 'duplikat'
+        const initial = location.hash ? location.hash.replace('#','') : 'duplikat';
+        // small delay to allow CSS transition
+        setTimeout(() => showSection(initial), 50);
     </script>
 </body>
 </html>
